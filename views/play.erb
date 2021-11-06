@@ -1,0 +1,37 @@
+<html>
+<style>
+body {
+  font-size: 20px;
+  text-align: center;
+  background-color: #7f8fa6;
+  font-family: monospace;
+    padding-top: 50px;
+    .game{
+    padding-top 50px;
+    text-align: center;
+  color: red;}
+  }
+</style>
+<body>
+<h1>Rock, Paper, Scissors</h1>
+<span style='font-size:100px;'>&#9994;</span>
+<span style='font-size:100px;'>&#9995;</span>
+ <span style='font-size:100px;'>&#9996;</span>
+ 
+
+<div style = "padding-top:30px fomt-size:50px">
+Welcome <%= @player.name %>!
+</div>
+
+<div style = "padding-top:50px">
+<form action="/value" method ="post">
+<label for="rps">Choose Rock, Paper or Scissor:</label>
+<select id="rps" name="rps">
+  <option value="Rock">Rock</option>
+  <option value="Paper">Paper</option>
+  <option value="Scissors">Scissors</option>
+</select>
+<input class = "button" type="submit" value="Let's play!!">
+</form>
+
+</div>
