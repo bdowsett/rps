@@ -4,7 +4,7 @@ class Game
   attr_reader :computer
   def initialize
     @computer = ["Rock", "Paper", "Scissors"].sample
-  end 
+  end
 
     def rps(choice)
      
